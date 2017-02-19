@@ -11,6 +11,7 @@ A collection of JavaScript coding challenges.
 ### Medium
 
 - [Stack machine calculator](https://github.com/indiesquidge/challenges/tree/master/stack-machine-calculator)
+- [Target sum exists](https://github.com/indiesquidge/challenges/tree/master/target-sum-exists)
 
 ### Hard
 
