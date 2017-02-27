@@ -1,0 +1,23 @@
+{
+  "name": "javascript-challenges",
+  "version": "1.0.0",
+  "description": "A collection of JavaScript coding challenges.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indiesquidge/challenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/indiesquidge/challenges/issues"
+  },
+  "homepage": "https://github.com/indiesquidge/challenges#readme",
+  "devDependencies": {
+    "sinon": "^1.17.7",
+    "tape": "^4.6.3"
+  }
+}

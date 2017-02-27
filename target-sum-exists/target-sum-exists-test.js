@@ -12,12 +12,18 @@ test('it returns true if the target sum exists', assert => {
 })
 
 test.skip('it returns false if the target sum does not exist', assert => {
-  assert.false(targetSumExistsInTwoNumbers([10, 20], 40), 'false: the sum does not exist')
+  assert.false(targetSumExistsInTwoNumbers([10, 20], 35), 'false: the sum does not exist')
 
   assert.end()
 })
 
-test.skip('it chan handle negative numbers in the list', assert => {
+test.skip('is is okay to use a number from the list more than once', assert => {
+  assert.true(targetSumExistsInTwoNumbers([10, 20], 40), 'true: the sum exists')
+
+  assert.end()
+})
+
+test.skip('it can handle negative numbers in the list', assert => {
   assert.true(targetSumExistsInTwoNumbers([-9, 10], 1))
   assert.false(targetSumExistsInTwoNumbers([10, -8], 1))
 

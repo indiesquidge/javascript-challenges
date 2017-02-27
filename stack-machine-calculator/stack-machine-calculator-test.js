@@ -1,4 +1,4 @@
-const process = require('./stack-machine-calculator.js')
+const process = require('./stack-machine-calculator')
 const test = require('tape')
 
 test('pushing values', assert => {

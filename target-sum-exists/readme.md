@@ -10,7 +10,13 @@ to the requested target.
 
 ```javascript
 targetSumExistsInTwoNumbers([10, 20], 30) // true
-targetSumExistsInTwoNumbers([10, 20], 40) // false
+targetSumExistsInTwoNumbers([10, 20], 35) // false
+```
+
+Keep in mind that a number from the list may be used twice
+
+```javascript
+targetSumExistsInTwoNumbers([10, 20], 40) // true
 ```
 
 ### Getting Started
@@ -20,8 +26,9 @@ The file you will be editing is `target-sum-exists.js`.
 The `target-sum-exists-test.js` file includes a test suite to run your code
 against.
 
-First run `npm i` to install the dependencies, then run `npm test` to run the
-test suite in full.
+Run `node target-sum-exists-test.js` to run the test suite in full. As you write code
+to pass tests, make sure you unskip succeeding tests by changing `test.skip` to
+just `test`.
 
 ### Second Challenge
 

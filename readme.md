@@ -1,18 +1,32 @@
-# JavaScript Challenges
+JavaScript Challenges
+=====================
 
 A collection of JavaScript coding challenges.
 
----
+Algorithms
+----------
 
-### Easy
+#### Beginner
 
-- [Babylonian square root method](https://github.com/indiesquidge/challenges/tree/master/babylonian-method)
+- [Babylonian square root method](/babylonian-method/)
+- [Number frequency](/number-frequency/)
 
-### Medium
+#### Intermediate
 
-- [Stack machine calculator](https://github.com/indiesquidge/challenges/tree/master/stack-machine-calculator)
-- [Target sum exists](https://github.com/indiesquidge/challenges/tree/master/target-sum-exists)
+- [Stack machine calculator](/stack-machine-calculator/)
+- [Target sum exists](/target-sum-exists/)
+- [Balanced Parentheses](/balanced-parens/)
+- [Add eventing](/add-eventing/)
 
-### Hard
+#### Advanced
 
-- [Object diffing](https://github.com/indiesquidge/challenges/tree/master/object-diff)
+- [Object diffing](/object-diff/)
+- [Recreate setInterval](/recreate-setinterval/)
+- [Recreate Promise.all](/recreate-promise-all/)
+
+Relevant Reading
+----------------
+
+- [10 Interview Questions Every JavaScript Developer Should Know][JS Interview Questions Article]
+
+[JS Interview Questions Article]: https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95

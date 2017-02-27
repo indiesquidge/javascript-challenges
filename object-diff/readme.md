@@ -13,12 +13,12 @@ full of fruit data!
 Given JavaScript objects like this
 
 ```javascript
-actual = {
+newCode = {
   apples: 3,
   oranges: 4
 }
 
-expected = {
+oldCode = {
   apples: 3,
   grapes: 5
 }
@@ -27,7 +27,7 @@ expected = {
 Create a function that returns an array containing the object diff like this
 
 ```javascript
-diff(actual, expected)
+diff(newCode, oldCode)
 
 // returns:
 // [
@@ -38,9 +38,10 @@ diff(actual, expected)
 
 ### Getting Started
 
-The file you will be editing is `challenge.js`.
+The file you will be editing is `object-diff.js`.
 
-The `challenge.js` file also includes a test suite to run your code against.
+The `object-diff-test.js` file includes a test suite to run your code against.
 
-First run `npm i` to install the dependencies, then run `npm test` to run the
-test suite in full.
+Run `node object-diff-test.js` to run the test suite in full. As you write code
+to pass tests, make sure you unskip succeeding tests by changing `test.skip` to
+just `test`.
