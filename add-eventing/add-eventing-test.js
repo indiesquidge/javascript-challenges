@@ -1,6 +1,5 @@
 const test = require('tape')
 const sinon = require('sinon')
-
 const addEventing = require('./add-eventing')
 
 test('it should call the callback on the trigger event', assert => {
@@ -31,18 +30,6 @@ test.skip('it should be able to handle multiple callback functions for the same 
   assert.end()
 })
 
-test.skip('it should not trigger events that were not set to listen', assert => {
-  const obj = addEventing({ name: 'Kelsey', age: 30 })
-  const notCalledEvent = sinon.spy()
-
-  obj.on('somethingElse')
-  obj.trigger('ageChange')
-
-  assert.notOk(notCalledEvent.called, 'notCalledEvent should not have been called')
-
-  assert.end()
-})
-
 test.skip('if it is called with an additional argument it should pass it to the listeners', assert => {
   const obj = addEventing({ name: 'Kelsey', age: 30 })
   const ageChangeEvent = sinon.spy()
@@ -68,6 +55,18 @@ test.skip('if it is called with an multiple arguments it should pass them to the
   obj.trigger('ageChange', newName, newAge)
 
   assert.ok(ageChangeEvent.calledWith(newName, newAge), message)
+
+  assert.end()
+})
+
+test.skip('it should not trigger events that were not set to listen', assert => {
+  const obj = addEventing({ name: 'Kelsey', age: 30 })
+  const notCalledEvent = sinon.spy()
+
+  obj.on('somethingElse', notCalledEvent)
+  obj.trigger('ageChange')
+
+  assert.notOk(notCalledEvent.called, 'notCalledEvent should not have been called')
 
   assert.end()
 })

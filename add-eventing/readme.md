@@ -27,7 +27,7 @@ obj.trigger('ageChange') // logs 'age changed'
 ```
 
 Requirements:
-- `addEventing` should return a new object with `on` and `trigger` as additionally added properties
+- `addEventing` should return an object with `on` and `trigger` as additionally added properties
 - it should be able to handle multiple callback functions for the same event name
 - if `obj.trigger` is called with additional arguments it should pass those to the listeners
 - note: we don't need to write a way to remove event listeners

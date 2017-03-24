@@ -1,8 +1,4 @@
-const addEventing = (obj) => {
-  return Object.assign({}, obj, {
-    on: () => {},
-    trigger: () => {}
-  })
+const addEventing = function (obj) {
 }
 
 module.exports = addEventing
