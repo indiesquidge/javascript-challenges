@@ -18,8 +18,8 @@ parentheses are balanced (that is, there is a proper closing parenthesis for
 every opened parenthesis).
 
 ```javascript
-parensAreBalanced('console.log("hi")') // true
-parensAreBalanced('console.log("hi"') // false
+parensAreBalanced('([])') // true
+parensAreBalanced('([)') // false
 ```
 
 Careful though: not only do we need to make sure we have a balanced number of

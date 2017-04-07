@@ -1,5 +1,5 @@
 const parensAreBalanced = (input) => {
-  return input
+  return false
 }
 
 module.exports = parensAreBalanced
