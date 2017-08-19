@@ -22,7 +22,7 @@ Algorithms
 
 - [Object diffing](/object-diff/)
 - [Recreate setInterval](/recreate-setinterval/)
-- [Recreate Promise.all](/recreate-promise-all/)
+- [Recreate Promise.all](/promise-dot-all/)
 
 Relevant Reading
 ----------------
