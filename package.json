@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/indiesquidge/challenges#readme",
   "devDependencies": {
-    "sinon": "^1.17.7",
-    "tape": "^4.6.3"
+    "sinon": "^6.1.4",
+    "tape": "^4.9.1"
   }
 }

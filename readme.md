@@ -1,32 +1,56 @@
-JavaScript Challenges
-=====================
+# JavaScript Challenges
 
 A collection of JavaScript coding challenges.
 
-Algorithms
-----------
+## Getting Started
 
-#### Beginner
+The only dependencies in this repo are for running the tests, which are written
+in Tape and Sinon.
 
-- [Babylonian square root method](/babylonian-method/)
-- [Number frequency](/number-frequency/)
+Install the dependencies
 
-#### Intermediate
+```
+npm i
+```
 
-- [Stack machine calculator](/stack-machine-calculator/)
-- [Target sum exists](/target-sum-exists/)
-- [Balanced Parentheses](/balanced-parens/)
-- [Add eventing](/add-eventing/)
+Then, in each challenge folder, you can run the following to see the tests for
+that challenge.
 
-#### Advanced
+```
+node <challenge>-test.js
+```
 
-- [Object diffing](/object-diff/)
-- [Recreate setInterval](/recreate-setinterval/)
-- [Recreate Promise.all](/promise-dot-all/)
+## Solving Challenges
 
-Relevant Reading
-----------------
+This repo is only a set of challenges, it does not include the answers to any of
+the challenges.
 
-- [10 Interview Questions Every JavaScript Developer Should Know][JS Interview Questions Article]
+If you implement a solution of your own, please **do not** post it publicly on
+this repository. Opening an issue or a pull request with a solution spoils the
+experience of the challenge for other developers who find this repository.
 
-[JS Interview Questions Article]: https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95
+## Challenges
+
+### Beginner
+
+* [Babylonian square root method](/babylonian-method/)
+* [Number frequency](/number-frequency/)
+
+### Intermediate
+
+* [Stack machine calculator](/stack-machine-calculator/)
+* [Target sum exists](/target-sum-exists/)
+* [Balanced Parentheses](/balanced-parens/)
+* [Add eventing](/add-eventing/)
+
+### Advanced
+
+* [Object diffing](/object-diff/)
+* [Recreate setInterval](/setinterval/)
+* [Recreate Promise.all](/promise-dot-all/)
+
+## Relevant Reading
+
+* [10 Interview Questions Every JavaScript Developer Should Know][js interview questions article]
+
+[js interview questions article]: https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95
