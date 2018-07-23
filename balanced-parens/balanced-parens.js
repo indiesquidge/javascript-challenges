@@ -1,5 +1,5 @@
-const parensAreBalanced = (input) => {
-  return false
+function parensAreBalanced() {
+  // your code here
 }
 
-module.exports = parensAreBalanced
+module.exports = parensAreBalanced;

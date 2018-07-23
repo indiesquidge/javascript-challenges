@@ -1,6 +1,6 @@
 # Add Eventing
 
-### Background
+## Background
 
 Event listeners are an important feature of asynchronous software.
 
@@ -9,7 +9,7 @@ callbacks based on things like user interactions and page loading, make it
 easier to control how events react to bubbling, and can be used even when we do
 not control the HTML markup.
 
-### Adding Custom Event Listeners
+## Adding Custom Event Listeners
 
 Make an `addEventing` mix-in that adds `.on()` and `.trigger()` methods to an
 object.
@@ -17,27 +17,53 @@ object.
 Example:
 
 ```javascript
-const obj = addEventing({ name: 'John', age: 35 })
+const person = { name: "Jane", age: 35 };
+const personWithEvents = addEventing(person);
 
-obj.on('ageChange', function () {
-  console.log('age changed')
-})
+personWithEvents.on("speak", function(...words) {
+  console.log("speak:", ...words);
+});
 
-obj.trigger('ageChange') // logs 'age changed'
+personWithEvents.trigger("speak", "hello world"); // logs 'speak: hello world'
 ```
 
 Requirements:
-- `addEventing` should return an object with `on` and `trigger` as additionally added properties
-- it should be able to handle multiple callback functions for the same event name
-- if `obj.trigger` is called with additional arguments it should pass those to the listeners
-- note: we don't need to write a way to remove event listeners
 
-### Getting Started
+* `addEventing` should return an object with `on` and `trigger` as additionally added properties
+* it should be able to handle multiple callback functions for the same event name
+* if `obj.trigger` is called with additional arguments it should pass those to the listeners
+
+### Bonus - Add an unsub
+
+Event listeners on the DOM are expensive, and can affect page performance if not
+managed properly, especially on older browsers. Even in our simple example here,
+it's still a good idea to clean up after ourselves.
+
+Add the ability for handlers to be unsubscribed from the event they are
+listening to.
+
+```javascript
+const person = { name: "Jane", age: 35 };
+const personWithEvents = addEventing(person);
+
+const listener = function(...words) {
+  console.log("speak:", ...words);
+};
+const unsubscribe = personWithEvents.on("speak", listener);
+
+personWithEvents.trigger("speak", "hello world"); // logs 'speak: hello world'
+
+unsubscribe();
+
+personWithEvents.trigger("speak", "hello again?"); // logs nothing
+```
+
+## Getting Started
 
 The file you will be editing is `add-eventing.js`.
 
-The `add-eventing-test.js` file includes a test suite to run your code against.
+The `add-eventing.test.js` file includes a test suite to run your code against.
 
-Run `node add-eventing-test.js` to run the test suite in full. As you write code
-to pass tests, make sure you unskip succeeding tests by changing `test.skip` to
-just `test`.
+Run `npm test` and filter by "add-eventing" to run the test suite specific to
+this challenge. As you write code to pass tests, make sure you unskip succeeding
+tests by changing `test.skip` to just `test`.

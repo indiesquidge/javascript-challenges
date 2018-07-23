@@ -1,4 +1,5 @@
-const addEventing = function (obj) {
+function addEventing() {
+  // your code here
 }
 
-module.exports = addEventing
+module.exports = addEventing;
