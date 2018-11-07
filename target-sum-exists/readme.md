@@ -5,7 +5,7 @@
 ### Determining if a Target Sum Exists
 
 We want to build an algorithm that takes a list of numbers and a target value,
-and can well us whether or not it's possible that two numbers in the list sum up
+and can tell us whether or not it's possible that two numbers in the list sum up
 to the requested target.
 
 ```javascript
@@ -34,7 +34,7 @@ just `test`.
 
 You'll notice that the `target-sum-exists.js` file exports two different
 modules: `targetSumExistsInTwoNumbers` and `targetSumExistsInThreeNumbers`. So
-far, we've only bee testing the former function.
+far, we've only been testing the former function.
 
 Once you have `targetSumExistsInTwoNumbers` passing the first few tests, see if
 you can make use of it to complete `targetSumExistsInThreeNumbers`.
