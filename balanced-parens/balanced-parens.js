@@ -1,26 +1,35 @@
-const parensAreBalanced = (str) => {
-  let stack = [];
-  let map = {
-      '(': ')',
-      '[': ']',
-      '{': '}'
-  }
+const parensAreBalanced = (input) => {
+  // let stack = [];
+  // let map = {
+  //     '(': ')',
+  //     '[': ']',
+  //     '{': '}'
+  // }
 
-  for (let i = 0; i < str.length; i++) {
+  // for (let i = 0; i < str.length; i++) {
 
 
-      if (str[i] === '(' || str[i] === '{' || str[i] === '[' ) {
-          stack.push(str[i]);
-      }
+  //     if (str[i] === '(' || str[i] === '{' || str[i] === '[' ) {
+  //         stack.push(str[i]);
+  //     }
 
-      else {
-          let last = stack.pop();
+  //     else {
+  //         let last = stack.pop();
 
           
-          if (str[i] !== map[last]) {
-              return false
-          };
-      }
+  //         if (str[i] !== map[last]) {
+  //             return false
+  //         };
+  //     }
+  let inputSplt = input.split("");
+  return !inputSplt.reduce((prevChar, currChar) => {
+    if (currChar === "(" || currChar === "{" || currChar === "[") {
+      return ++prevChar;
+    } else if (currChar === ")" || currChar === "}" || currChar === "]") {
+      return --prevChar;
+    }
+    return prevChar;
+  }, 0);
   }
   
       if (stack.length !== 0) {
